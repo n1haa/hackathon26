@@ -1,16 +1,16 @@
-# CashFlow AI — integration of `recurring_detector` and `risk_engine`
+# CashFlow AI — интеграция `recurring_detector` и `risk_engine`
 
-This package links the two supplied modules with `cashflow_pipeline.py` and a runnable `main.py` demonstration. The original modules were copied without changing their detection algorithms; only the file `risk_engine(1).py` was given the import-friendly name `risk_engine.py` inside this package.
+Этот пакет связывает два предоставленных модуля с помощью `cashflow_pipeline.py` и демонстрационного скрипта `main.py`. Исходные алгоритмы модулей обнаружения не изменялись; файл `risk_engine(1).py` получил внутри пакета имя `risk_engine.py`, удобное для импорта.
 
-## Important repository finding
+## Важные сведения о предоставленном проекте
 
-The supplied files include `recurring_detector.py`, `risk_engine(1).py`, their test files, READMEs and **the statement of one business only: `C002.csv`**. There is no forecasting module or forecasting response schema in the provided files. Therefore the package does not invent or duplicate forecasting. It exposes an adapter contract so the existing forecast module can receive recurring events and return projected balances to `risk_engine`.
+В предоставленных файлах есть `recurring_detector.py`, `risk_engine(1).py`, их тесты, README-файлы и **выписка только одного предприятия — `C002.csv`**. Модуль forecasting и схема его ответа среди переданных файлов отсутствуют. Поэтому пакет не создаёт и не дублирует прогнозирование, а предоставляет интерфейс адаптера: существующий модуль прогноза может получать регулярные события и возвращать прогнозируемые остатки для `risk_engine`.
 
-`C002.csv` is a single-company statement, not the combined dataset: **1,122 operations**, company `C002`, from `2024-10-01` through `2026-09-30`. The table has nine fields (`company_id`, `operation_id`, `operation_date`, `amount`, `direction`, `counterparty_inn`, `counterparty_name`, `payment_purpose`, `balance_eod`) and no category column. The integration validates that a single run does not combine different `company_id` values. INNs and IDs are read as strings to preserve leading zeros.
+`C002.csv` — выписка одной компании, а не объединённый датасет: **1 122 операции** компании `C002` за период с `2024-10-01` по `2026-09-30`. В таблице девять полей: `company_id`, `operation_id`, `operation_date`, `amount`, `direction`, `counterparty_inn`, `counterparty_name`, `payment_purpose`, `balance_eod`. Поля категории нет. Интеграция проверяет, чтобы в рамках одного запуска не объединялись разные значения `company_id`. ИНН и идентификаторы загружаются как строки, чтобы сохранить ведущие нули.
 
-## Run the demonstration
+## Запуск демонстрации
 
-Requirements: Python 3.10+, `pandas`, `numpy`, `pytest`.
+Требования: Python 3.10 или новее, `pandas`, `numpy`, `pytest`.
 
 ```bash
 pip install pandas numpy pytest
@@ -18,15 +18,15 @@ python main.py
 pytest -q
 ```
 
-Use another single-company statement with:
+Чтобы использовать выписку другого предприятия (в файле должна быть только одна компания), выполните:
 
 ```bash
 python main.py --transactions /path/to/company.csv
 ```
 
-The demo runs recurrence detection on the included real `C002.csv`, then calls the risk engine on a **separate, explicitly illustrative forecast fixture** for 1–30 October 2026. The fixture is not a forecast generated from C002 data and must not be used for business decisions. It exists because the team's actual forecasting module was not included with the supplied files.
+Демонстрация запускает поиск регулярных операций на реальных данных из `C002.csv`, а затем передаёт в `risk_engine` **отдельный, явно демонстрационный пример прогноза** на 1–30 октября 2026 года. Этот пример не является прогнозом, рассчитанным на основе данных C002, и его нельзя использовать для принятия бизнес-решений. Он включён потому, что фактический модуль прогнозирования команды среди предоставленных файлов отсутствует.
 
-## Integrated API
+## Интеграционный API
 
 ```python
 import pandas as pd
@@ -39,40 +39,40 @@ transactions = pd.read_csv(
     dtype={"company_id": str, "operation_id": str, "counterparty_inn": str},
 )
 
-# `forecast_output` must be the real forecast result from Vova's module;
-# its rows need a date and an already-computed balance column.
+# `forecast_output` должен быть реальным результатом модуля Вовы;
+# в строках должны быть дата и уже рассчитанный прогнозируемый остаток.
 result = run_cashflow_pipeline(
     transactions,
     forecast=forecast_output,
 )
 
-recurring_events = result["recurring_events"]  # detector's complete history result
-forecast_inputs = result["forecast_inputs"]    # expected events within forecast window
-cash_gap = result["cash_gap"]                  # result from risk_engine
+recurring_events = result["recurring_events"]  # все шаблоны регулярности, найденные детектором
+forecast_inputs = result["forecast_inputs"]    # ожидаемые события внутри горизонта прогноза
+cash_gap = result["cash_gap"]                  # результат risk_engine
 ```
 
-Top-level result fields:
+Основные поля результата:
 
-- `company_id`: one company ID inferred from the input, e.g. `C002`.
-- `recurring_events`: all detected recurring patterns based on available history.
-- `forecast_inputs`: expected occurrences with `expected_next_date` falling inside the chosen forecast horizon, serialized for the forecast module.
-- `forecast_window`: start, end and number of days.
-- `cash_gap`: unchanged result shape from `analyze_cash_gap`.
-- `status`, `minimum_balance`, `maximum_deficit`, `probability`, `probability_status`: convenience aliases from `cash_gap`.
-- `warnings`: combined integration and risk-engine warnings.
+- `company_id` — идентификатор одной компании, определённый по входным данным, например `C002`.
+- `recurring_events` — все найденные шаблоны регулярных операций на основании доступной истории.
+- `forecast_inputs` — ожидаемые события, у которых `expected_next_date` попадает в выбранный горизонт прогноза; они сериализованы для передачи в модуль прогнозирования.
+- `forecast_window` — начало, конец и число дней прогнозного горизонта.
+- `cash_gap` — результат `analyze_cash_gap` в исходном формате.
+- `status`, `minimum_balance`, `maximum_deficit`, `probability`, `probability_status` — удобные поля, дублирующие соответствующие значения из `cash_gap`.
+- `warnings` — объединённые предупреждения интеграционного слоя и модуля оценки кассовых разрывов.
 
-### Event format for forecasting
+### Формат событий для forecasting
 
-Each item in `forecast_inputs` contains `date`, `direction`, `amount`, `signed_amount`, `counterparty`, `category`, `frequency`, `confidence`, `occurrences_count`, `company_id` and `source`. Incoming amounts have a positive `signed_amount`; outgoing amounts are negative. The forecasting module should use these event inputs as expected dated cash flows before producing the projected daily balance. The bridge does not add these amounts to the balance itself and does not create new occurrences beyond the detector's single `expected_next_date`.
+Каждый элемент `forecast_inputs` содержит поля `date`, `direction`, `amount`, `signed_amount`, `counterparty`, `category`, `frequency`, `confidence`, `occurrences_count`, `company_id` и `source`. Для входящих поступлений `signed_amount` положительный, для исходящих списаний — отрицательный. Перед формированием дневного прогноза остатка модуль forecasting должен использовать эти события как ожидаемые денежные потоки на соответствующие даты. Интеграционный слой сам не прибавляет эти суммы к остатку и не создаёт повторных событий сверх единственной даты `expected_next_date`, рассчитанной детектором.
 
-### Connecting the actual forecasting function
+### Подключение фактической функции forecasting
 
-If Vova's API can accept additional expected events, wrap it with `forecast_builder`. It receives keyword arguments `transactions`, `recurring_events`, `base_forecast`, `start_date`, `horizon_days`, and must return the final forecast in a format accepted by `risk_engine`:
+Если API Вовы умеет принимать дополнительные ожидаемые события, оберните его функцией `forecast_builder`. Она получает именованные аргументы `transactions`, `recurring_events`, `base_forecast`, `start_date`, `horizon_days` и должна вернуть итоговый прогноз в формате, который понимает `risk_engine`:
 
 ```python
 def forecasting_adapter(*, transactions, recurring_events, base_forecast,
                         start_date, horizon_days):
-    # Adapt this body to the real forecasting API; do not copy the placeholder.
+    # Адаптируйте этот блок к реальному API прогнозирования; это не готовая реализация.
     return vova_forecasting_function(
         transactions=transactions,
         expected_events=recurring_events,
@@ -89,32 +89,32 @@ result = run_cashflow_pipeline(
 )
 ```
 
-The adapter example's `vova_forecasting_function` is a placeholder name, not an implementation shipped here. If the actual forecasting function has a different signature, this thin adapter is the only place that should translate to it. The forecasting module remains responsible for constructing balances; `risk_engine` only evaluates them.
+Имя `vova_forecasting_function` в примере — заглушка, а не включённая в пакет реализация. Если фактическая функция прогнозирования имеет другую сигнатуру, преобразования под неё следует выполнять только в этом небольшом адаптере. За расчёт остатков отвечает модуль forecasting; `risk_engine` только анализирует их.
 
-If a forecast is provided without `forecast_builder`, `run_cashflow_pipeline` still runs the risk analysis but emits a warning that recurring signals have **not** been incorporated into that forecast. This prevents the output from implying a tighter integration than actually occurred.
+Если готовый прогноз передан без `forecast_builder`, `run_cashflow_pipeline` всё равно выполнит анализ риска, но добавит предупреждение, что регулярные сигналы **не были учтены** в этом прогнозе. Это не позволяет результату создавать ложное впечатление, будто модули полностью соединены.
 
-## Forecast window and stale expected dates
+## Горизонт прогноза и устаревшие ожидаемые даты
 
-The detector can return a next expected date before the new forecast starts if the last transaction for that specific counterparty/purpose was old. These events are not shifted forward, because doing so would invent dates not supported by the detector. Only events whose `expected_next_date` falls between the start date and the last day of the forecast window are passed to forecasting. Exclusions are reported in `warnings`.
+Детектор может вернуть ожидаемую дату следующей операции, которая наступает до начала нового прогнозного горизонта, например если последняя операция определённого контрагента или назначения платежа была давно. Такие события не переносятся на будущую дату автоматически: это означало бы создание даты, не подтверждённой результатом детектора. В forecasting передаются только события, у которых `expected_next_date` находится между датой начала и последним днём прогнозного горизонта включительно. Исключённые события указываются в `warnings`.
 
-The detector's `confidence` is a heuristic measure of regularity, **not the probability that a payment will happen**. `risk_engine.probability` remains `None`; risk levels (`low`, `medium`, `high`) are rule-based severity labels, not probabilities.
+Поле `confidence` детектора — эвристическая оценка регулярности, **а не вероятность того, что платёж произойдёт**. Поле `risk_engine.probability` остаётся равным `None`; уровни риска (`low`, `medium`, `high`) — это категории серьёзности по заданным правилам, а не вероятности.
 
-## Test coverage
+## Что покрывают тесты
 
-The test run covers:
+Тесты охватывают:
 
-- all tests shipped with `recurring_detector` and `risk_engine`;
-- joining the outputs, signed cash-flow conversion and forecast-window filtering;
-- the forecast-builder callback contract;
-- single-company input guard;
-- invalid horizons and unknown directions;
-- smoke test against the included `C002.csv` file.
+- все тесты, поставленные вместе с `recurring_detector` и `risk_engine`;
+- объединение результатов двух модулей, преобразование знака денежного потока и фильтрацию по горизонту прогноза;
+- контракт вызова обратной функции `forecast_builder`;
+- проверку того, что входные данные относятся только к одной компании;
+- некорректные горизонты прогноза и неизвестные направления операций;
+- базовую проверку работы на включённом файле `C002.csv`.
 
-## Findings and recommendations
+## Выводы и рекомендации
 
-1. **Agree on the actual forecast contract with Vova**: name of the daily balance field, date semantics and how recurring events should be provided to his module.
-2. **The source has no category field**, so category is `None`. Do not invent categories in this bridge.
-3. **The expected event list is not a probability model**. Consider using calibrated recurrence confidence only as a configurable input filter; validate it against labeled examples before relying on it.
-4. **A stale next date is excluded rather than rolled forward**. A future enhancement can add explicit overdue-event logic, but it should require a business rule and evidence.
-5. One account statement may not include all business liquidity. Other accounts, overdrafts and transfers between own accounts can affect the real cash position.
-6. The included `main.py` demo fixture is synthetic; replace it with the actual forecasting model output before drawing conclusions about C002's future cash gaps.
+1. **Согласуйте с Вовой фактический контракт прогноза:** название поля дневного остатка, трактовку даты и способ передачи регулярных событий в его модуль.
+2. **В исходных данных нет поля категории**, поэтому `category` равен `None`. Интеграционный слой не должен выдумывать категории.
+3. **Список ожидаемых событий не является вероятностной моделью.** Рассматривайте `confidence` регулярности как настраиваемый фильтр и проверяйте его на размеченных примерах, прежде чем полагаться на него.
+4. **Устаревшая ожидаемая дата исключается, а не переносится вперёд.** В будущем можно добавить отдельную логику просроченных операций, но для неё нужны согласованное бизнес-правило и подтверждающие данные.
+5. Выписка одного счёта может не отражать всю ликвидность предприятия. Другие счета, овердрафты и переводы между собственными счетами могут влиять на реальный остаток денежных средств.
+6. Демонстрационный прогноз в `main.py` — синтетический. Перед выводами о будущих кассовых разрывах C002 замените его результатом фактического модуля forecasting.
