@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "days": 240,
+  "history_start": "2026-01-01",
+  "as_of": "2026-08-28",
+  "complete_history": true,
+  "opening_balance": 100000.0,
+  "current_balance": 1448299.53
+}

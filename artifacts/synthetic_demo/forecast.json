@@ -1,0 +1,597 @@
+{
+  "model_name": "exponential_smoothing",
+  "horizon": 30,
+  "generated_at": "2026-10-23T23:43:21.871718+00:00",
+  "as_of": "2026-08-28",
+  "timezone": "Europe/Moscow",
+  "current_balance": 1448299.53,
+  "history_days": 240,
+  "forecast": [
+    {
+      "date": "2026-08-29",
+      "predicted_income": 7783.47,
+      "predicted_expense": 3041.75,
+      "predicted_net_flow": 4741.72,
+      "predicted_balance": 1453041.25,
+      "model_income": 7783.47,
+      "model_expense": 3041.75,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-08-30",
+      "predicted_income": 7994.09,
+      "predicted_expense": 3409.79,
+      "predicted_net_flow": 4584.3,
+      "predicted_balance": 1457625.55,
+      "model_income": 7994.09,
+      "model_expense": 3409.79,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-08-31",
+      "predicted_income": 13656.05,
+      "predicted_expense": 5340.36,
+      "predicted_net_flow": 8315.69,
+      "predicted_balance": 1465941.24,
+      "model_income": 13656.05,
+      "model_expense": 5340.36,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-01",
+      "predicted_income": 13613.86,
+      "predicted_expense": 5409.6,
+      "predicted_net_flow": 8204.26,
+      "predicted_balance": 1474145.5,
+      "model_income": 13613.86,
+      "model_expense": 5409.6,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-02",
+      "predicted_income": 13141.93,
+      "predicted_expense": 7565.18,
+      "predicted_net_flow": 5576.75,
+      "predicted_balance": 1479722.25,
+      "model_income": 13141.93,
+      "model_expense": 7565.18,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-03",
+      "predicted_income": 13810.0,
+      "predicted_expense": 5183.31,
+      "predicted_net_flow": 8626.69,
+      "predicted_balance": 1488348.94,
+      "model_income": 13810.0,
+      "model_expense": 5183.31,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-04",
+      "predicted_income": 9282.81,
+      "predicted_expense": 3784.25,
+      "predicted_net_flow": 5498.56,
+      "predicted_balance": 1493847.5,
+      "model_income": 9282.81,
+      "model_expense": 3784.25,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-05",
+      "predicted_income": 7783.47,
+      "predicted_expense": 3041.75,
+      "predicted_net_flow": 4741.72,
+      "predicted_balance": 1498589.22,
+      "model_income": 7783.47,
+      "model_expense": 3041.75,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-06",
+      "predicted_income": 7994.09,
+      "predicted_expense": 3409.79,
+      "predicted_net_flow": 4584.3,
+      "predicted_balance": 1503173.52,
+      "model_income": 7994.09,
+      "model_expense": 3409.79,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-07",
+      "predicted_income": 13656.05,
+      "predicted_expense": 5340.36,
+      "predicted_net_flow": 8315.69,
+      "predicted_balance": 1511489.21,
+      "model_income": 13656.05,
+      "model_expense": 5340.36,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-08",
+      "predicted_income": 13613.86,
+      "predicted_expense": 5409.6,
+      "predicted_net_flow": 8204.26,
+      "predicted_balance": 1519693.47,
+      "model_income": 13613.86,
+      "model_expense": 5409.6,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-09",
+      "predicted_income": 13141.93,
+      "predicted_expense": 7565.18,
+      "predicted_net_flow": 5576.75,
+      "predicted_balance": 1525270.22,
+      "model_income": 13141.93,
+      "model_expense": 7565.18,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-10",
+      "predicted_income": 13810.0,
+      "predicted_expense": 5183.31,
+      "predicted_net_flow": 8626.69,
+      "predicted_balance": 1533896.91,
+      "model_income": 13810.0,
+      "model_expense": 5183.31,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-11",
+      "predicted_income": 9282.81,
+      "predicted_expense": 3784.25,
+      "predicted_net_flow": 5498.56,
+      "predicted_balance": 1539395.47,
+      "model_income": 9282.81,
+      "model_expense": 3784.25,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-12",
+      "predicted_income": 7783.47,
+      "predicted_expense": 3041.75,
+      "predicted_net_flow": 4741.72,
+      "predicted_balance": 1544137.19,
+      "model_income": 7783.47,
+      "model_expense": 3041.75,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-13",
+      "predicted_income": 7994.09,
+      "predicted_expense": 3409.79,
+      "predicted_net_flow": 4584.3,
+      "predicted_balance": 1548721.49,
+      "model_income": 7994.09,
+      "model_expense": 3409.79,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-14",
+      "predicted_income": 13656.05,
+      "predicted_expense": 5340.36,
+      "predicted_net_flow": 8315.69,
+      "predicted_balance": 1557037.18,
+      "model_income": 13656.05,
+      "model_expense": 5340.36,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-15",
+      "predicted_income": 13613.86,
+      "predicted_expense": 5409.6,
+      "predicted_net_flow": 8204.26,
+      "predicted_balance": 1565241.44,
+      "model_income": 13613.86,
+      "model_expense": 5409.6,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-16",
+      "predicted_income": 13141.93,
+      "predicted_expense": 7565.18,
+      "predicted_net_flow": 5576.75,
+      "predicted_balance": 1570818.19,
+      "model_income": 13141.93,
+      "model_expense": 7565.18,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-17",
+      "predicted_income": 13810.0,
+      "predicted_expense": 5183.31,
+      "predicted_net_flow": 8626.69,
+      "predicted_balance": 1579444.88,
+      "model_income": 13810.0,
+      "model_expense": 5183.31,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-18",
+      "predicted_income": 9282.81,
+      "predicted_expense": 3784.25,
+      "predicted_net_flow": 5498.56,
+      "predicted_balance": 1584943.44,
+      "model_income": 9282.81,
+      "model_expense": 3784.25,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-19",
+      "predicted_income": 7783.47,
+      "predicted_expense": 3041.75,
+      "predicted_net_flow": 4741.72,
+      "predicted_balance": 1589685.16,
+      "model_income": 7783.47,
+      "model_expense": 3041.75,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-20",
+      "predicted_income": 7994.09,
+      "predicted_expense": 3409.79,
+      "predicted_net_flow": 4584.3,
+      "predicted_balance": 1594269.46,
+      "model_income": 7994.09,
+      "model_expense": 3409.79,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-21",
+      "predicted_income": 13656.05,
+      "predicted_expense": 5340.36,
+      "predicted_net_flow": 8315.69,
+      "predicted_balance": 1602585.15,
+      "model_income": 13656.05,
+      "model_expense": 5340.36,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-22",
+      "predicted_income": 13613.86,
+      "predicted_expense": 5409.6,
+      "predicted_net_flow": 8204.26,
+      "predicted_balance": 1610789.41,
+      "model_income": 13613.86,
+      "model_expense": 5409.6,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-23",
+      "predicted_income": 13141.93,
+      "predicted_expense": 7565.18,
+      "predicted_net_flow": 5576.75,
+      "predicted_balance": 1616366.16,
+      "model_income": 13141.93,
+      "model_expense": 7565.18,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-24",
+      "predicted_income": 13810.0,
+      "predicted_expense": 5183.31,
+      "predicted_net_flow": 8626.69,
+      "predicted_balance": 1624992.85,
+      "model_income": 13810.0,
+      "model_expense": 5183.31,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-25",
+      "predicted_income": 9282.81,
+      "predicted_expense": 3784.25,
+      "predicted_net_flow": 5498.56,
+      "predicted_balance": 1630491.41,
+      "model_income": 9282.81,
+      "model_expense": 3784.25,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-26",
+      "predicted_income": 7783.47,
+      "predicted_expense": 3041.75,
+      "predicted_net_flow": 4741.72,
+      "predicted_balance": 1635233.13,
+      "model_income": 7783.47,
+      "model_expense": 3041.75,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    },
+    {
+      "date": "2026-09-27",
+      "predicted_income": 7994.09,
+      "predicted_expense": 3409.79,
+      "predicted_net_flow": 4584.3,
+      "predicted_balance": 1639817.43,
+      "model_income": 7994.09,
+      "model_expense": 3409.79,
+      "scheduled_income": 0.0,
+      "scheduled_expense": 0.0
+    }
+  ],
+  "metrics": {
+    "status": "evaluated",
+    "selected_model": "exponential_smoothing",
+    "selection_metric": "validation.flow_mae",
+    "horizon": 30,
+    "validation": {
+      "weekday_baseline": {
+        "income": {
+          "mae": 1676.1174444444448,
+          "rmse": 2424.564820486578,
+          "wape": 0.15276944280794466
+        },
+        "expense": {
+          "mae": 1634.1596666666667,
+          "rmse": 4752.362820063884,
+          "wape": 0.3232104819844354
+        },
+        "flow_mae": 1655.1385555555557,
+        "balance_mae": 8051.112000000002
+      },
+      "exponential_smoothing": {
+        "income": {
+          "mae": 1118.759,
+          "rmse": 2237.6856475387935,
+          "wape": 0.10196910105128272
+        },
+        "expense": {
+          "mae": 1621.9351111111112,
+          "rmse": 4774.7095923224015,
+          "wape": 0.32079266163691944
+        },
+        "flow_mae": 1370.3470555555555,
+        "balance_mae": 10653.472666666667
+      },
+      "hist_gradient_boosting": {
+        "income": {
+          "mae": 2153.195333333334,
+          "rmse": 2906.5323695829247,
+          "wape": 0.19625262681937497
+        },
+        "expense": {
+          "mae": 1540.3614444444445,
+          "rmse": 3000.5808180385857,
+          "wape": 0.30465870321267874
+        },
+        "flow_mae": 1846.7783888888894,
+        "balance_mae": 13267.812777777783
+      }
+    },
+    "test": {
+      "weekday_baseline": {
+        "income": {
+          "mae": 2125.767666666667,
+          "rmse": 2892.7961681016054,
+          "wape": 0.18133115424036708
+        },
+        "expense": {
+          "mae": 1661.3693333333333,
+          "rmse": 4777.316115972091,
+          "wape": 0.3119275792954169
+        },
+        "flow_mae": 1893.5685000000003,
+        "balance_mae": 12364.629333333336
+      },
+      "exponential_smoothing": {
+        "income": {
+          "mae": 1457.1626666666666,
+          "rmse": 2830.554311785355,
+          "wape": 0.1242981499840785
+        },
+        "expense": {
+          "mae": 1765.3659999999998,
+          "rmse": 4909.024651884187,
+          "wape": 0.3314532969292196
+        },
+        "flow_mae": 1611.264333333333,
+        "balance_mae": 7059.387333333333
+      },
+      "hist_gradient_boosting": {
+        "income": {
+          "mae": 2011.1156666666664,
+          "rmse": 2767.8529476780373,
+          "wape": 0.17155116754569383
+        },
+        "expense": {
+          "mae": 1516.2996666666663,
+          "rmse": 3001.3686761903587,
+          "wape": 0.28469027026086563
+        },
+        "flow_mae": 1763.7076666666662,
+        "balance_mae": 10442.24033333333
+      }
+    },
+    "folds": [
+      {
+        "train_start": "2026-01-01",
+        "train_end": "2026-04-30",
+        "validation_start": "2026-05-01",
+        "validation_end": "2026-05-30",
+        "metrics": {
+          "weekday_baseline": {
+            "income": {
+              "mae": 1399.2976666666668,
+              "rmse": 1768.2011289924008,
+              "wape": 0.13051266451256213
+            },
+            "expense": {
+              "mae": 1687.3516666666665,
+              "rmse": 4738.494637092741,
+              "wape": 0.344532210042576
+            },
+            "flow_mae": 1543.3246666666666,
+            "balance_mae": 9067.511666666665
+          },
+          "exponential_smoothing": {
+            "income": {
+              "mae": 1024.1330000000003,
+              "rmse": 1529.6198272065299,
+              "wape": 0.09552101016765586
+            },
+            "expense": {
+              "mae": 1428.9389999999999,
+              "rmse": 4663.4022915495925,
+              "wape": 0.2917681722261188
+            },
+            "flow_mae": 1226.536,
+            "balance_mae": 9803.736
+          },
+          "hist_gradient_boosting": {
+            "income": {
+              "mae": 2431.899666666667,
+              "rmse": 3127.8642972551306,
+              "wape": 0.2268235793460279
+            },
+            "expense": {
+              "mae": 1664.9323333333332,
+              "rmse": 3293.600281644693,
+              "wape": 0.3399545143472421
+            },
+            "flow_mae": 2048.416,
+            "balance_mae": 14220.438666666674
+          }
+        }
+      },
+      {
+        "train_start": "2026-01-01",
+        "train_end": "2026-05-30",
+        "validation_start": "2026-05-31",
+        "validation_end": "2026-06-29",
+        "metrics": {
+          "weekday_baseline": {
+            "income": {
+              "mae": 1796.9906666666661,
+              "rmse": 2672.5057247883806,
+              "wape": 0.1647199202935996
+            },
+            "expense": {
+              "mae": 1779.1449999999998,
+              "rmse": 4837.061198516099,
+              "wape": 0.3547951741684962
+            },
+            "flow_mae": 1788.067833333333,
+            "balance_mae": 7409.502666666665
+          },
+          "exponential_smoothing": {
+            "income": {
+              "mae": 1110.3080000000002,
+              "rmse": 2475.059115378863,
+              "wape": 0.10177562335401448
+            },
+            "expense": {
+              "mae": 1693.4703333333337,
+              "rmse": 4798.426462692743,
+              "wape": 0.3377100246827445
+            },
+            "flow_mae": 1401.8891666666668,
+            "balance_mae": 11118.696333333335
+          },
+          "hist_gradient_boosting": {
+            "income": {
+              "mae": 2152.4266666666667,
+              "rmse": 2807.371113569894,
+              "wape": 0.19730071811047342
+            },
+            "expense": {
+              "mae": 1378.9006666666662,
+              "rmse": 2463.6320363682557,
+              "wape": 0.2749788815363871
+            },
+            "flow_mae": 1765.6636666666664,
+            "balance_mae": 19189.405666666673
+          }
+        }
+      },
+      {
+        "train_start": "2026-01-01",
+        "train_end": "2026-06-29",
+        "validation_start": "2026-06-30",
+        "validation_end": "2026-07-29",
+        "metrics": {
+          "weekday_baseline": {
+            "income": {
+              "mae": 1832.0639999999999,
+              "rmse": 2714.170522392922,
+              "wape": 0.16236333677969184
+            },
+            "expense": {
+              "mae": 1435.9823333333331,
+              "rmse": 4680.209894505801,
+              "wape": 0.27320898620017625
+            },
+            "flow_mae": 1634.0231666666664,
+            "balance_mae": 7676.321666666668
+          },
+          "exponential_smoothing": {
+            "income": {
+              "mae": 1221.836,
+              "rmse": 2560.479785352737,
+              "wape": 0.10828299118237768
+            },
+            "expense": {
+              "mae": 1743.3959999999997,
+              "rmse": 4860.178764443409,
+              "wape": 0.33169729365665995
+            },
+            "flow_mae": 1482.616,
+            "balance_mae": 11037.985666666664
+          },
+          "hist_gradient_boosting": {
+            "income": {
+              "mae": 1875.2596666666661,
+              "rmse": 2771.0870818056223,
+              "wape": 0.1661914741015448
+            },
+            "expense": {
+              "mae": 1577.2513333333334,
+              "rmse": 3176.9749937437864,
+              "wape": 0.3000867265285828
+            },
+            "flow_mae": 1726.2554999999998,
+            "balance_mae": 6393.594000000001
+          }
+        }
+      }
+    ],
+    "failures": {},
+    "test_period": {
+      "train_end": "2026-07-29",
+      "start": "2026-07-30",
+      "end": "2026-08-28"
+    },
+    "scope": "historical_flows"
+  },
+  "warnings": [],
+  "recurring_events": [],
+  "data_source": "SYNTHETIC: fictional business; not evidence of accuracy on bank data"
+}
