@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 .streamlit/secrets.toml
+.idea/
+cashflow_datasets
+generate_datasets.py
