@@ -1,0 +1,522 @@
+{
+  "datasets": [
+    {
+      "file": "all_operations.csv",
+      "rows": 222420,
+      "companies": 150,
+      "date_start": "2024-10-01",
+      "date_end": "2026-09-30",
+      "columns": [
+        "company_id",
+        "operation_id",
+        "operation_date",
+        "amount",
+        "direction",
+        "counterparty_inn",
+        "counterparty_name",
+        "payment_purpose",
+        "balance_eod"
+      ],
+      "missing": {
+        "company_id": 0,
+        "operation_id": 0,
+        "operation_date": 0,
+        "amount": 0,
+        "direction": 0,
+        "counterparty_inn": 11166,
+        "counterparty_name": 0,
+        "payment_purpose": 583,
+        "balance_eod": 0
+      },
+      "directions": {
+        "Поступление": 144138,
+        "Списание": 78282
+      },
+      "operations_per_company": {
+        "C001": 1131,
+        "C002": 1122,
+        "C003": 523,
+        "C004": 1540,
+        "C005": 513,
+        "C006": 1143,
+        "C007": 253,
+        "C008": 2122,
+        "C009": 3223,
+        "C010": 2319,
+        "C011": 1643,
+        "C012": 2819,
+        "C013": 495,
+        "C014": 2328,
+        "C015": 2455,
+        "C016": 746,
+        "C017": 2299,
+        "C018": 1993,
+        "C019": 2017,
+        "C020": 2438,
+        "C021": 2794,
+        "C022": 427,
+        "C023": 2243,
+        "C024": 3354,
+        "C025": 1406,
+        "C026": 3027,
+        "C027": 379,
+        "C028": 2328,
+        "C029": 396,
+        "C030": 3243,
+        "C031": 3129,
+        "C032": 442,
+        "C033": 953,
+        "C034": 2165,
+        "C035": 2837,
+        "C036": 1988,
+        "C037": 864,
+        "C038": 2034,
+        "C039": 178,
+        "C040": 553,
+        "C041": 2318,
+        "C042": 636,
+        "C043": 457,
+        "C044": 2041,
+        "C045": 2408,
+        "C046": 147,
+        "C047": 609,
+        "C048": 1230,
+        "C049": 68,
+        "C050": 2468,
+        "C051": 2194,
+        "C052": 443,
+        "C053": 2369,
+        "C054": 2192,
+        "C055": 3220,
+        "C056": 509,
+        "C057": 2201,
+        "C058": 488,
+        "C059": 369,
+        "C060": 2056,
+        "C061": 1525,
+        "C062": 877,
+        "C063": 2041,
+        "C064": 1988,
+        "C065": 2427,
+        "C066": 313,
+        "C067": 2235,
+        "C068": 81,
+        "C069": 770,
+        "C070": 2132,
+        "C071": 614,
+        "C072": 2921,
+        "C073": 2467,
+        "C074": 2317,
+        "C075": 613,
+        "C076": 2097,
+        "C077": 500,
+        "C078": 774,
+        "C079": 2348,
+        "C080": 523,
+        "C081": 179,
+        "C082": 581,
+        "C083": 2972,
+        "C084": 3335,
+        "C085": 2514,
+        "C086": 2018,
+        "C087": 619,
+        "C088": 95,
+        "C089": 523,
+        "C090": 2382,
+        "C091": 1498,
+        "C092": 542,
+        "C093": 403,
+        "C094": 2022,
+        "C095": 2108,
+        "C096": 594,
+        "C097": 429,
+        "C098": 373,
+        "C099": 1323,
+        "C100": 2267,
+        "C101": 651,
+        "C102": 2429,
+        "C103": 469,
+        "C104": 2241,
+        "C105": 481,
+        "C106": 1992,
+        "C107": 2227,
+        "C108": 1473,
+        "C109": 1173,
+        "C110": 150,
+        "C111": 511,
+        "C112": 667,
+        "C113": 2293,
+        "C114": 493,
+        "C115": 480,
+        "C116": 2196,
+        "C117": 497,
+        "C118": 2244,
+        "C119": 2115,
+        "C120": 2187,
+        "C121": 994,
+        "C122": 317,
+        "C123": 1593,
+        "C124": 501,
+        "C125": 1999,
+        "C126": 3231,
+        "C127": 1849,
+        "C128": 565,
+        "C129": 1984,
+        "C130": 2340,
+        "C131": 527,
+        "C132": 2882,
+        "C133": 496,
+        "C134": 515,
+        "C135": 917,
+        "C136": 508,
+        "C137": 3218,
+        "C138": 421,
+        "C139": 470,
+        "C140": 2150,
+        "C141": 2112,
+        "C142": 431,
+        "C143": 998,
+        "C144": 2397,
+        "C145": 484,
+        "C146": 1980,
+        "C147": 2353,
+        "C148": 1457,
+        "C149": 893,
+        "C150": 2244
+      },
+      "duplicate_operation_ids": 0,
+      "nonpositive_amounts": 0,
+      "negative_balance_days": 1266,
+      "conflicting_eod_days": 0,
+      "reconciled_transitions_checked": 54812,
+      "inconsistent_balance_transitions_tolerance_0_011": 55,
+      "balance_mismatches": [
+        {
+          "company_id": "C004",
+          "date": "2025-07-15",
+          "balance_change_minus_flow": -234671.59
+        },
+        {
+          "company_id": "C004",
+          "date": "2026-08-26",
+          "balance_change_minus_flow": -32190.16
+        },
+        {
+          "company_id": "C010",
+          "date": "2025-09-10",
+          "balance_change_minus_flow": 426340.58
+        },
+        {
+          "company_id": "C010",
+          "date": "2026-04-23",
+          "balance_change_minus_flow": 1017308.67
+        },
+        {
+          "company_id": "C013",
+          "date": "2025-08-14",
+          "balance_change_minus_flow": -4386100.88
+        },
+        {
+          "company_id": "C013",
+          "date": "2025-12-11",
+          "balance_change_minus_flow": 867938.72
+        },
+        {
+          "company_id": "C018",
+          "date": "2025-12-22",
+          "balance_change_minus_flow": 222965.32
+        },
+        {
+          "company_id": "C018",
+          "date": "2026-03-24",
+          "balance_change_minus_flow": 191434.47
+        },
+        {
+          "company_id": "C027",
+          "date": "2025-01-17",
+          "balance_change_minus_flow": -6510268.47
+        },
+        {
+          "company_id": "C027",
+          "date": "2025-12-15",
+          "balance_change_minus_flow": 555924.0
+        },
+        {
+          "company_id": "C035",
+          "date": "2025-04-07",
+          "balance_change_minus_flow": 30576.47
+        },
+        {
+          "company_id": "C035",
+          "date": "2025-11-18",
+          "balance_change_minus_flow": -296161.27
+        },
+        {
+          "company_id": "C038",
+          "date": "2025-06-24",
+          "balance_change_minus_flow": 107083.21
+        },
+        {
+          "company_id": "C038",
+          "date": "2026-02-03",
+          "balance_change_minus_flow": -455662.22
+        },
+        {
+          "company_id": "C040",
+          "date": "2024-12-23",
+          "balance_change_minus_flow": -597818.35
+        },
+        {
+          "company_id": "C040",
+          "date": "2025-05-07",
+          "balance_change_minus_flow": 1129089.5
+        },
+        {
+          "company_id": "C044",
+          "date": "2025-02-17",
+          "balance_change_minus_flow": -408563.94
+        },
+        {
+          "company_id": "C053",
+          "date": "2025-01-09",
+          "balance_change_minus_flow": -12031.18
+        },
+        {
+          "company_id": "C053",
+          "date": "2025-10-01",
+          "balance_change_minus_flow": -6900.0
+        },
+        {
+          "company_id": "C053",
+          "date": "2026-02-03",
+          "balance_change_minus_flow": -2871.98
+        },
+        {
+          "company_id": "C053",
+          "date": "2026-03-23",
+          "balance_change_minus_flow": 14268.35
+        },
+        {
+          "company_id": "C058",
+          "date": "2025-08-26",
+          "balance_change_minus_flow": -133986.31
+        },
+        {
+          "company_id": "C065",
+          "date": "2024-10-08",
+          "balance_change_minus_flow": -3297.49
+        },
+        {
+          "company_id": "C065",
+          "date": "2025-11-10",
+          "balance_change_minus_flow": 69805.57
+        },
+        {
+          "company_id": "C065",
+          "date": "2025-11-13",
+          "balance_change_minus_flow": 5100.0
+        },
+        {
+          "company_id": "C065",
+          "date": "2026-02-02",
+          "balance_change_minus_flow": -36812.14
+        },
+        {
+          "company_id": "C089",
+          "date": "2026-02-12",
+          "balance_change_minus_flow": -1550039.92
+        },
+        {
+          "company_id": "C090",
+          "date": "2024-10-08",
+          "balance_change_minus_flow": -717.08
+        },
+        {
+          "company_id": "C090",
+          "date": "2024-12-06",
+          "balance_change_minus_flow": -1022.95
+        },
+        {
+          "company_id": "C090",
+          "date": "2025-07-16",
+          "balance_change_minus_flow": 21093.5
+        },
+        {
+          "company_id": "C090",
+          "date": "2025-12-19",
+          "balance_change_minus_flow": -924.25
+        },
+        {
+          "company_id": "C090",
+          "date": "2026-03-18",
+          "balance_change_minus_flow": -187415.6
+        },
+        {
+          "company_id": "C090",
+          "date": "2026-06-02",
+          "balance_change_minus_flow": 11910.99
+        },
+        {
+          "company_id": "C092",
+          "date": "2026-05-12",
+          "balance_change_minus_flow": -3158719.68
+        },
+        {
+          "company_id": "C094",
+          "date": "2026-08-12",
+          "balance_change_minus_flow": -16872.58
+        },
+        {
+          "company_id": "C097",
+          "date": "2026-04-28",
+          "balance_change_minus_flow": -1616469.97
+        },
+        {
+          "company_id": "C103",
+          "date": "2024-11-28",
+          "balance_change_minus_flow": 3020493.17
+        },
+        {
+          "company_id": "C103",
+          "date": "2025-09-10",
+          "balance_change_minus_flow": -264124.75
+        },
+        {
+          "company_id": "C106",
+          "date": "2025-06-19",
+          "balance_change_minus_flow": -875665.57
+        },
+        {
+          "company_id": "C106",
+          "date": "2025-07-10",
+          "balance_change_minus_flow": 256265.29
+        },
+        {
+          "company_id": "C113",
+          "date": "2026-04-07",
+          "balance_change_minus_flow": -145198.76
+        },
+        {
+          "company_id": "C114",
+          "date": "2025-07-21",
+          "balance_change_minus_flow": 324174.71
+        },
+        {
+          "company_id": "C114",
+          "date": "2026-03-31",
+          "balance_change_minus_flow": -426937.01
+        },
+        {
+          "company_id": "C118",
+          "date": "2024-11-11",
+          "balance_change_minus_flow": -4400.4
+        },
+        {
+          "company_id": "C118",
+          "date": "2025-02-04",
+          "balance_change_minus_flow": -2434.79
+        },
+        {
+          "company_id": "C118",
+          "date": "2025-06-05",
+          "balance_change_minus_flow": -56037.7
+        },
+        {
+          "company_id": "C118",
+          "date": "2025-09-02",
+          "balance_change_minus_flow": 216589.97
+        },
+        {
+          "company_id": "C118",
+          "date": "2025-11-17",
+          "balance_change_minus_flow": 37693.27
+        },
+        {
+          "company_id": "C118",
+          "date": "2026-04-27",
+          "balance_change_minus_flow": 59868.13
+        },
+        {
+          "company_id": "C118",
+          "date": "2026-06-23",
+          "balance_change_minus_flow": -29840.2
+        },
+        {
+          "company_id": "C125",
+          "date": "2025-05-23",
+          "balance_change_minus_flow": 719644.56
+        },
+        {
+          "company_id": "C125",
+          "date": "2026-04-27",
+          "balance_change_minus_flow": 521657.79
+        },
+        {
+          "company_id": "C147",
+          "date": "2026-03-24",
+          "balance_change_minus_flow": -167964.45
+        },
+        {
+          "company_id": "C148",
+          "date": "2025-04-21",
+          "balance_change_minus_flow": 5655.45
+        },
+        {
+          "company_id": "C148",
+          "date": "2025-06-24",
+          "balance_change_minus_flow": 2128826.7
+        }
+      ]
+    },
+    {
+      "file": "C002.csv",
+      "rows": 1122,
+      "companies": 1,
+      "date_start": "2024-10-01",
+      "date_end": "2026-09-30",
+      "columns": [
+        "company_id",
+        "operation_id",
+        "operation_date",
+        "amount",
+        "direction",
+        "counterparty_inn",
+        "counterparty_name",
+        "payment_purpose",
+        "balance_eod"
+      ],
+      "missing": {
+        "company_id": 0,
+        "operation_id": 0,
+        "operation_date": 0,
+        "amount": 0,
+        "direction": 0,
+        "counterparty_inn": 0,
+        "counterparty_name": 0,
+        "payment_purpose": 0,
+        "balance_eod": 0
+      },
+      "directions": {
+        "Поступление": 689,
+        "Списание": 433
+      },
+      "operations_per_company": {
+        "C002": 1122
+      },
+      "duplicate_operation_ids": 0,
+      "nonpositive_amounts": 0,
+      "negative_balance_days": 0,
+      "conflicting_eod_days": 0,
+      "reconciled_transitions_checked": 424,
+      "inconsistent_balance_transitions_tolerance_0_011": 0,
+      "balance_mismatches": []
+    }
+  ],
+  "c002_recurring": {
+    "patterns": 120,
+    "events_in_window": 27,
+    "excluded_outside_window": 93,
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-30"
+  }
+}
