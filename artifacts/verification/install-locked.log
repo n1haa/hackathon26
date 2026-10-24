@@ -1,0 +1,82 @@
+Requirement already satisfied: altair==6.2.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 3)) (6.2.2)
+Requirement already satisfied: anyio==4.15.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 4)) (4.15.1)
+Requirement already satisfied: attrs==26.1.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 5)) (26.1.0)
+Requirement already satisfied: build==1.6.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 6)) (1.6.1)
+Requirement already satisfied: certifi==2026.10.23 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 7)) (2026.10.23)
+Requirement already satisfied: charset-normalizer==3.5.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 8)) (3.5.2)
+Requirement already satisfied: click==8.5.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 9)) (8.5.0)
+Requirement already satisfied: cloudpickle==3.1.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 10)) (3.1.2)
+Requirement already satisfied: colorama==0.4.6 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 11)) (0.4.6)
+Requirement already satisfied: et_xmlfile==2.0.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 12)) (2.0.0)
+Requirement already satisfied: exceptiongroup==1.3.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 13)) (1.3.1)
+Requirement already satisfied: h11==0.16.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 14)) (0.16.0)
+Requirement already satisfied: httptools==0.9.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 15)) (0.9.0)
+Requirement already satisfied: idna==3.20 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 16)) (3.20)
+Requirement already satisfied: iniconfig==2.3.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 17)) (2.3.1)
+Requirement already satisfied: itsdangerous==2.2.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 18)) (2.2.0)
+Requirement already satisfied: Jinja2==3.1.6 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 19)) (3.1.6)
+Requirement already satisfied: joblib==1.6.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 20)) (1.6.0)
+Requirement already satisfied: jsonschema==4.26.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 21)) (4.26.0)
+Requirement already satisfied: jsonschema-specifications==2025.9.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 22)) (2025.9.1)
+Requirement already satisfied: MarkupSafe==3.0.4 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 23)) (3.0.4)
+Requirement already satisfied: narwhals==2.27.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 24)) (2.27.1)
+Requirement already satisfied: numpy==2.2.6 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 25)) (2.2.6)
+Requirement already satisfied: openpyxl==3.1.5 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 26)) (3.1.5)
+Requirement already satisfied: packaging==26.3 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 27)) (26.3)
+Requirement already satisfied: pandas==2.3.3 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 28)) (2.3.3)
+Requirement already satisfied: pillow==12.3.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 29)) (12.3.0)
+Requirement already satisfied: plotly==6.9.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 30)) (6.9.0)
+Requirement already satisfied: pluggy==1.7.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 31)) (1.7.0)
+Requirement already satisfied: protobuf==7.36.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 32)) (7.36.2)
+Requirement already satisfied: pyarrow==25.0.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 33)) (25.0.1)
+Requirement already satisfied: pydeck==0.9.3 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 34)) (0.9.3)
+Requirement already satisfied: Pygments==2.21.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 35)) (2.21.0)
+Requirement already satisfied: pyproject_hooks==1.3.3 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 36)) (1.3.3)
+Requirement already satisfied: pytest==8.4.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 37)) (8.4.2)
+Requirement already satisfied: python-dateutil==3.0.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 38)) (3.0.0)
+Requirement already satisfied: python-multipart==0.0.32 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 39)) (0.0.32)
+Requirement already satisfied: pytz==2026.5 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 40)) (2026.5)
+Requirement already satisfied: referencing==0.37.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 41)) (0.37.0)
+Requirement already satisfied: requests==2.34.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 42)) (2.34.2)
+Requirement already satisfied: rpds-py==0.30.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 43)) (0.30.0)
+Requirement already satisfied: ruff==0.17.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 44)) (0.17.2)
+Requirement already satisfied: scikit-learn==1.7.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 45)) (1.7.2)
+Requirement already satisfied: scipy==1.15.3 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 46)) (1.15.3)
+Requirement already satisfied: setuptools==84.2.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 47)) (84.2.1)
+Requirement already satisfied: six==1.17.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 48)) (1.17.0)
+Requirement already satisfied: starlette==1.7.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 49)) (1.7.0)
+Requirement already satisfied: streamlit==1.65.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 50)) (1.65.0)
+Requirement already satisfied: threadpoolctl==3.7.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 51)) (3.7.0)
+Requirement already satisfied: toml==0.10.2 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 52)) (0.10.2)
+Requirement already satisfied: tomli==2.5.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 53)) (2.5.0)
+Requirement already satisfied: typing_extensions==4.16.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 54)) (4.16.0)
+Requirement already satisfied: tzdata==2026.5 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 55)) (2026.5)
+Requirement already satisfied: urllib3==2.8.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 56)) (2.8.0)
+Requirement already satisfied: uvicorn==0.54.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 57)) (0.54.0)
+Requirement already satisfied: watchdog==6.0.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 58)) (6.0.0)
+Requirement already satisfied: websockets==16.1.1 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 59)) (16.1.1)
+Requirement already satisfied: wheel==0.48.0 in d:\hackathon\cashflow-monorepo\.venv\lib\site-packages (from -r D:\hackathon\cashflow-monorepo\requirements.lock (line 60)) (0.48.0)
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.2
+[notice] To update, run: D:\hackathon\cashflow-monorepo\.venv\Scripts\python.exe -m pip install --upgrade pip
+Obtaining file:///D:/hackathon/cashflow-monorepo
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: cashflow-workspace
+  Building editable for cashflow-workspace (pyproject.toml): started
+  Building editable for cashflow-workspace (pyproject.toml): finished with status 'done'
+  Created wheel for cashflow-workspace: filename=cashflow_workspace-0.1.0-0.editable-py3-none-any.whl size=3524 sha256=912191157e7bc3d6d5dc268df9c8185cc0f9caf0607c2c2fc47b75e32f58a030
+  Stored in directory: C:\Users\nises\AppData\Local\Temp\pip-ephem-wheel-cache-jf3uhs3m\wheels\51\d2\ff\37c47db1a652350544041ed95cb4c23fb0167dbcf8857916be
+Successfully built cashflow-workspace
+Installing collected packages: cashflow-workspace
+  Attempting uninstall: cashflow-workspace
+    Found existing installation: cashflow-workspace 0.1.0
+    Uninstalling cashflow-workspace-0.1.0:
+      Successfully uninstalled cashflow-workspace-0.1.0
+Successfully installed cashflow-workspace-0.1.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.2
+[notice] To update, run: D:\hackathon\cashflow-monorepo\.venv\Scripts\python.exe -m pip install --upgrade pip
+No broken requirements found.

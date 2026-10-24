@@ -1,0 +1,8 @@
+include README.md AGENTS.md INTEGRATION_PLAN.md INTEGRATION_NOTES.md
+include manage.py Makefile requirements.lock source-manifest.json .gitignore
+include .streamlit/config.toml
+graft apps
+graft packages
+graft scripts
+graft tests
+global-exclude *.pyc *.pyo

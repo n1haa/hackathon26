@@ -1,0 +1,27 @@
+{
+  "original_files_unchanged": 69,
+  "sources_not_available": [],
+  "modified_copied_files": [
+    "apps/web/app.py",
+    "apps/web/cashflow/data_access.py",
+    "packages/risk/recurring_detector.py",
+    "packages/risk/risk_engine.py"
+  ],
+  "package_import_graph": {
+    "cashflow_web": [
+      "cashflow"
+    ],
+    "cashflow": [
+      "cashflow_app"
+    ],
+    "cashflow_app": [
+      "cashflow_integrated",
+      "forecasting",
+      "transaction_classifier"
+    ],
+    "forecasting": [],
+    "transaction_classifier": [],
+    "cashflow_integrated": []
+  },
+  "package_cycles": false
+}

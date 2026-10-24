@@ -1,0 +1,944 @@
+{
+  "data_source": "Organizer-provided synthetic participant bank statements; not real companies",
+  "source_file": "all_operations.csv",
+  "source_sha256": "28d7a2ebc6d4d65f31f93e59e24659a04c76990d20833337b9351316fd445472",
+  "rows": 222420,
+  "companies": 150,
+  "date_min": "2024-10-01",
+  "date_max": "2026-09-30",
+  "threshold": 0.8,
+  "empty_purpose_rows": 583,
+  "empty_counterparty_inn_rows": 11166,
+  "invalid_amount_rows": 0,
+  "invalid_date_rows": 0,
+  "duplicate_rows": 0,
+  "duplicate_operation_ids": 0,
+  "duplicate_payload_rows": 21,
+  "category_counts": {
+    "revenue": 115479,
+    "unknown": 66851,
+    "other_expense": 13945,
+    "salary": 9206,
+    "purchases": 4926,
+    "rent": 4026,
+    "taxes": 3939,
+    "bank_fees": 2632,
+    "internal_transfer": 1416
+  },
+  "method_counts": {
+    "rule": 155569,
+    "unknown": 66851
+  },
+  "classified_rows": 155569,
+  "unknown_rows": 66851,
+  "coverage": 0.6994380001798399,
+  "unknown_fraction": 0.3005619998201601,
+  "reference_labels_present": false,
+  "quality_metrics": null,
+  "quality_status": "No reference category column: accuracy/F1/precision/recall/confusion matrix are not measurable. Rules are not reference labels.",
+  "ml_training": "Not performed: no independent reference labels are available.",
+  "confidence_scope": "Expert rule scores; not calibrated probabilities or measured precision",
+  "balance_scope": "balance_eod is end-of-day, unchanged; no per-operation balance reinterpretation",
+  "per_company": [
+    {
+      "company_id": "C001",
+      "rows": 1131,
+      "classified_rows": 566,
+      "coverage": 0.5004420866489832
+    },
+    {
+      "company_id": "C002",
+      "rows": 1122,
+      "classified_rows": 532,
+      "coverage": 0.4741532976827095
+    },
+    {
+      "company_id": "C003",
+      "rows": 523,
+      "classified_rows": 162,
+      "coverage": 0.30975143403441685
+    },
+    {
+      "company_id": "C004",
+      "rows": 1540,
+      "classified_rows": 1306,
+      "coverage": 0.8480519480519481
+    },
+    {
+      "company_id": "C005",
+      "rows": 513,
+      "classified_rows": 166,
+      "coverage": 0.3235867446393762
+    },
+    {
+      "company_id": "C006",
+      "rows": 1143,
+      "classified_rows": 841,
+      "coverage": 0.7357830271216098
+    },
+    {
+      "company_id": "C007",
+      "rows": 253,
+      "classified_rows": 61,
+      "coverage": 0.24110671936758893
+    },
+    {
+      "company_id": "C008",
+      "rows": 2122,
+      "classified_rows": 1723,
+      "coverage": 0.8119698397737983
+    },
+    {
+      "company_id": "C009",
+      "rows": 3223,
+      "classified_rows": 1876,
+      "coverage": 0.5820663977660565
+    },
+    {
+      "company_id": "C010",
+      "rows": 2319,
+      "classified_rows": 1671,
+      "coverage": 0.720569210866753
+    },
+    {
+      "company_id": "C011",
+      "rows": 1643,
+      "classified_rows": 1192,
+      "coverage": 0.7255021302495435
+    },
+    {
+      "company_id": "C012",
+      "rows": 2819,
+      "classified_rows": 2420,
+      "coverage": 0.8584604469670096
+    },
+    {
+      "company_id": "C013",
+      "rows": 495,
+      "classified_rows": 191,
+      "coverage": 0.38585858585858585
+    },
+    {
+      "company_id": "C014",
+      "rows": 2328,
+      "classified_rows": 1588,
+      "coverage": 0.6821305841924399
+    },
+    {
+      "company_id": "C015",
+      "rows": 2455,
+      "classified_rows": 2270,
+      "coverage": 0.924643584521385
+    },
+    {
+      "company_id": "C016",
+      "rows": 746,
+      "classified_rows": 598,
+      "coverage": 0.8016085790884718
+    },
+    {
+      "company_id": "C017",
+      "rows": 2299,
+      "classified_rows": 1936,
+      "coverage": 0.8421052631578947
+    },
+    {
+      "company_id": "C018",
+      "rows": 1993,
+      "classified_rows": 1641,
+      "coverage": 0.8233818364274962
+    },
+    {
+      "company_id": "C019",
+      "rows": 2017,
+      "classified_rows": 1703,
+      "coverage": 0.8443232523549826
+    },
+    {
+      "company_id": "C020",
+      "rows": 2438,
+      "classified_rows": 1759,
+      "coverage": 0.72149302707137
+    },
+    {
+      "company_id": "C021",
+      "rows": 2794,
+      "classified_rows": 1971,
+      "coverage": 0.7054402290622763
+    },
+    {
+      "company_id": "C022",
+      "rows": 427,
+      "classified_rows": 254,
+      "coverage": 0.594847775175644
+    },
+    {
+      "company_id": "C023",
+      "rows": 2243,
+      "classified_rows": 1828,
+      "coverage": 0.8149799375835934
+    },
+    {
+      "company_id": "C024",
+      "rows": 3354,
+      "classified_rows": 1686,
+      "coverage": 0.5026833631484794
+    },
+    {
+      "company_id": "C025",
+      "rows": 1406,
+      "classified_rows": 1311,
+      "coverage": 0.9324324324324325
+    },
+    {
+      "company_id": "C026",
+      "rows": 3027,
+      "classified_rows": 2208,
+      "coverage": 0.7294350842418236
+    },
+    {
+      "company_id": "C027",
+      "rows": 379,
+      "classified_rows": 152,
+      "coverage": 0.40105540897097625
+    },
+    {
+      "company_id": "C028",
+      "rows": 2328,
+      "classified_rows": 1738,
+      "coverage": 0.7465635738831615
+    },
+    {
+      "company_id": "C029",
+      "rows": 396,
+      "classified_rows": 174,
+      "coverage": 0.4393939393939394
+    },
+    {
+      "company_id": "C030",
+      "rows": 3243,
+      "classified_rows": 1693,
+      "coverage": 0.5220474868948505
+    },
+    {
+      "company_id": "C031",
+      "rows": 3129,
+      "classified_rows": 1731,
+      "coverage": 0.5532118887823586
+    },
+    {
+      "company_id": "C032",
+      "rows": 442,
+      "classified_rows": 181,
+      "coverage": 0.4095022624434389
+    },
+    {
+      "company_id": "C033",
+      "rows": 953,
+      "classified_rows": 421,
+      "coverage": 0.44176285414480587
+    },
+    {
+      "company_id": "C034",
+      "rows": 2165,
+      "classified_rows": 1782,
+      "coverage": 0.8230946882217091
+    },
+    {
+      "company_id": "C035",
+      "rows": 2837,
+      "classified_rows": 1677,
+      "coverage": 0.5911173775114558
+    },
+    {
+      "company_id": "C036",
+      "rows": 1988,
+      "classified_rows": 1410,
+      "coverage": 0.7092555331991952
+    },
+    {
+      "company_id": "C037",
+      "rows": 864,
+      "classified_rows": 836,
+      "coverage": 0.9675925925925926
+    },
+    {
+      "company_id": "C038",
+      "rows": 2034,
+      "classified_rows": 1897,
+      "coverage": 0.932645034414946
+    },
+    {
+      "company_id": "C039",
+      "rows": 178,
+      "classified_rows": 49,
+      "coverage": 0.2752808988764045
+    },
+    {
+      "company_id": "C040",
+      "rows": 553,
+      "classified_rows": 260,
+      "coverage": 0.4701627486437613
+    },
+    {
+      "company_id": "C041",
+      "rows": 2318,
+      "classified_rows": 1703,
+      "coverage": 0.7346850733390854
+    },
+    {
+      "company_id": "C042",
+      "rows": 636,
+      "classified_rows": 318,
+      "coverage": 0.5
+    },
+    {
+      "company_id": "C043",
+      "rows": 457,
+      "classified_rows": 201,
+      "coverage": 0.43982494529540483
+    },
+    {
+      "company_id": "C044",
+      "rows": 2041,
+      "classified_rows": 1637,
+      "coverage": 0.8020578147966683
+    },
+    {
+      "company_id": "C045",
+      "rows": 2408,
+      "classified_rows": 1759,
+      "coverage": 0.7304817275747508
+    },
+    {
+      "company_id": "C046",
+      "rows": 147,
+      "classified_rows": 48,
+      "coverage": 0.32653061224489793
+    },
+    {
+      "company_id": "C047",
+      "rows": 609,
+      "classified_rows": 268,
+      "coverage": 0.4400656814449918
+    },
+    {
+      "company_id": "C048",
+      "rows": 1230,
+      "classified_rows": 568,
+      "coverage": 0.46178861788617886
+    },
+    {
+      "company_id": "C049",
+      "rows": 68,
+      "classified_rows": 17,
+      "coverage": 0.25
+    },
+    {
+      "company_id": "C050",
+      "rows": 2468,
+      "classified_rows": 2083,
+      "coverage": 0.8440032414910859
+    },
+    {
+      "company_id": "C051",
+      "rows": 2194,
+      "classified_rows": 1724,
+      "coverage": 0.7857793983591613
+    },
+    {
+      "company_id": "C052",
+      "rows": 443,
+      "classified_rows": 288,
+      "coverage": 0.6501128668171557
+    },
+    {
+      "company_id": "C053",
+      "rows": 2369,
+      "classified_rows": 2074,
+      "coverage": 0.8754748839172647
+    },
+    {
+      "company_id": "C054",
+      "rows": 2192,
+      "classified_rows": 1665,
+      "coverage": 0.7595802919708029
+    },
+    {
+      "company_id": "C055",
+      "rows": 3220,
+      "classified_rows": 1927,
+      "coverage": 0.5984472049689441
+    },
+    {
+      "company_id": "C056",
+      "rows": 509,
+      "classified_rows": 458,
+      "coverage": 0.899803536345776
+    },
+    {
+      "company_id": "C057",
+      "rows": 2201,
+      "classified_rows": 1702,
+      "coverage": 0.773284870513403
+    },
+    {
+      "company_id": "C058",
+      "rows": 488,
+      "classified_rows": 293,
+      "coverage": 0.6004098360655737
+    },
+    {
+      "company_id": "C059",
+      "rows": 369,
+      "classified_rows": 317,
+      "coverage": 0.8590785907859079
+    },
+    {
+      "company_id": "C060",
+      "rows": 2056,
+      "classified_rows": 1817,
+      "coverage": 0.8837548638132295
+    },
+    {
+      "company_id": "C061",
+      "rows": 1525,
+      "classified_rows": 1332,
+      "coverage": 0.8734426229508196
+    },
+    {
+      "company_id": "C062",
+      "rows": 877,
+      "classified_rows": 489,
+      "coverage": 0.5575826681870011
+    },
+    {
+      "company_id": "C063",
+      "rows": 2041,
+      "classified_rows": 1727,
+      "coverage": 0.8461538461538461
+    },
+    {
+      "company_id": "C064",
+      "rows": 1988,
+      "classified_rows": 1931,
+      "coverage": 0.971327967806841
+    },
+    {
+      "company_id": "C065",
+      "rows": 2427,
+      "classified_rows": 1700,
+      "coverage": 0.7004532344458179
+    },
+    {
+      "company_id": "C066",
+      "rows": 313,
+      "classified_rows": 140,
+      "coverage": 0.4472843450479233
+    },
+    {
+      "company_id": "C067",
+      "rows": 2235,
+      "classified_rows": 1821,
+      "coverage": 0.8147651006711409
+    },
+    {
+      "company_id": "C068",
+      "rows": 81,
+      "classified_rows": 35,
+      "coverage": 0.43209876543209874
+    },
+    {
+      "company_id": "C069",
+      "rows": 770,
+      "classified_rows": 584,
+      "coverage": 0.7584415584415585
+    },
+    {
+      "company_id": "C070",
+      "rows": 2132,
+      "classified_rows": 1704,
+      "coverage": 0.799249530956848
+    },
+    {
+      "company_id": "C071",
+      "rows": 614,
+      "classified_rows": 310,
+      "coverage": 0.504885993485342
+    },
+    {
+      "company_id": "C072",
+      "rows": 2921,
+      "classified_rows": 2105,
+      "coverage": 0.7206436152002739
+    },
+    {
+      "company_id": "C073",
+      "rows": 2467,
+      "classified_rows": 2152,
+      "coverage": 0.8723145520875557
+    },
+    {
+      "company_id": "C074",
+      "rows": 2317,
+      "classified_rows": 2109,
+      "coverage": 0.9102287440656021
+    },
+    {
+      "company_id": "C075",
+      "rows": 613,
+      "classified_rows": 234,
+      "coverage": 0.3817292006525285
+    },
+    {
+      "company_id": "C076",
+      "rows": 2097,
+      "classified_rows": 218,
+      "coverage": 0.10395803528850739
+    },
+    {
+      "company_id": "C077",
+      "rows": 500,
+      "classified_rows": 173,
+      "coverage": 0.346
+    },
+    {
+      "company_id": "C078",
+      "rows": 774,
+      "classified_rows": 413,
+      "coverage": 0.5335917312661499
+    },
+    {
+      "company_id": "C079",
+      "rows": 2348,
+      "classified_rows": 2002,
+      "coverage": 0.8526405451448041
+    },
+    {
+      "company_id": "C080",
+      "rows": 523,
+      "classified_rows": 359,
+      "coverage": 0.6864244741873805
+    },
+    {
+      "company_id": "C081",
+      "rows": 179,
+      "classified_rows": 143,
+      "coverage": 0.7988826815642458
+    },
+    {
+      "company_id": "C082",
+      "rows": 581,
+      "classified_rows": 231,
+      "coverage": 0.39759036144578314
+    },
+    {
+      "company_id": "C083",
+      "rows": 2972,
+      "classified_rows": 2201,
+      "coverage": 0.740578734858681
+    },
+    {
+      "company_id": "C084",
+      "rows": 3335,
+      "classified_rows": 1699,
+      "coverage": 0.5094452773613194
+    },
+    {
+      "company_id": "C085",
+      "rows": 2514,
+      "classified_rows": 1806,
+      "coverage": 0.7183770883054893
+    },
+    {
+      "company_id": "C086",
+      "rows": 2018,
+      "classified_rows": 1776,
+      "coverage": 0.8800792864222002
+    },
+    {
+      "company_id": "C087",
+      "rows": 619,
+      "classified_rows": 281,
+      "coverage": 0.45395799676898224
+    },
+    {
+      "company_id": "C088",
+      "rows": 95,
+      "classified_rows": 29,
+      "coverage": 0.30526315789473685
+    },
+    {
+      "company_id": "C089",
+      "rows": 523,
+      "classified_rows": 211,
+      "coverage": 0.40344168260038243
+    },
+    {
+      "company_id": "C090",
+      "rows": 2382,
+      "classified_rows": 1763,
+      "coverage": 0.7401343408900084
+    },
+    {
+      "company_id": "C091",
+      "rows": 1498,
+      "classified_rows": 532,
+      "coverage": 0.35514018691588783
+    },
+    {
+      "company_id": "C092",
+      "rows": 542,
+      "classified_rows": 234,
+      "coverage": 0.4317343173431734
+    },
+    {
+      "company_id": "C093",
+      "rows": 403,
+      "classified_rows": 241,
+      "coverage": 0.598014888337469
+    },
+    {
+      "company_id": "C094",
+      "rows": 2022,
+      "classified_rows": 1703,
+      "coverage": 0.8422354104846687
+    },
+    {
+      "company_id": "C095",
+      "rows": 2108,
+      "classified_rows": 1887,
+      "coverage": 0.8951612903225806
+    },
+    {
+      "company_id": "C096",
+      "rows": 594,
+      "classified_rows": 242,
+      "coverage": 0.4074074074074074
+    },
+    {
+      "company_id": "C097",
+      "rows": 429,
+      "classified_rows": 95,
+      "coverage": 0.22144522144522144
+    },
+    {
+      "company_id": "C098",
+      "rows": 373,
+      "classified_rows": 194,
+      "coverage": 0.5201072386058981
+    },
+    {
+      "company_id": "C099",
+      "rows": 1323,
+      "classified_rows": 970,
+      "coverage": 0.7331821617535903
+    },
+    {
+      "company_id": "C100",
+      "rows": 2267,
+      "classified_rows": 1784,
+      "coverage": 0.7869430966034406
+    },
+    {
+      "company_id": "C101",
+      "rows": 651,
+      "classified_rows": 112,
+      "coverage": 0.17204301075268819
+    },
+    {
+      "company_id": "C102",
+      "rows": 2429,
+      "classified_rows": 2167,
+      "coverage": 0.892136681762042
+    },
+    {
+      "company_id": "C103",
+      "rows": 469,
+      "classified_rows": 172,
+      "coverage": 0.36673773987206826
+    },
+    {
+      "company_id": "C104",
+      "rows": 2241,
+      "classified_rows": 1744,
+      "coverage": 0.7782240071396698
+    },
+    {
+      "company_id": "C105",
+      "rows": 481,
+      "classified_rows": 389,
+      "coverage": 0.8087318087318087
+    },
+    {
+      "company_id": "C106",
+      "rows": 1992,
+      "classified_rows": 264,
+      "coverage": 0.13253012048192772
+    },
+    {
+      "company_id": "C107",
+      "rows": 2227,
+      "classified_rows": 1827,
+      "coverage": 0.8203861697350696
+    },
+    {
+      "company_id": "C108",
+      "rows": 1473,
+      "classified_rows": 222,
+      "coverage": 0.15071283095723015
+    },
+    {
+      "company_id": "C109",
+      "rows": 1173,
+      "classified_rows": 603,
+      "coverage": 0.5140664961636828
+    },
+    {
+      "company_id": "C110",
+      "rows": 150,
+      "classified_rows": 114,
+      "coverage": 0.76
+    },
+    {
+      "company_id": "C111",
+      "rows": 511,
+      "classified_rows": 290,
+      "coverage": 0.5675146771037182
+    },
+    {
+      "company_id": "C112",
+      "rows": 667,
+      "classified_rows": 286,
+      "coverage": 0.4287856071964018
+    },
+    {
+      "company_id": "C113",
+      "rows": 2293,
+      "classified_rows": 1809,
+      "coverage": 0.788922808547754
+    },
+    {
+      "company_id": "C114",
+      "rows": 493,
+      "classified_rows": 239,
+      "coverage": 0.4847870182555781
+    },
+    {
+      "company_id": "C115",
+      "rows": 480,
+      "classified_rows": 262,
+      "coverage": 0.5458333333333333
+    },
+    {
+      "company_id": "C116",
+      "rows": 2196,
+      "classified_rows": 1780,
+      "coverage": 0.8105646630236795
+    },
+    {
+      "company_id": "C117",
+      "rows": 497,
+      "classified_rows": 171,
+      "coverage": 0.3440643863179074
+    },
+    {
+      "company_id": "C118",
+      "rows": 2244,
+      "classified_rows": 1872,
+      "coverage": 0.8342245989304813
+    },
+    {
+      "company_id": "C119",
+      "rows": 2115,
+      "classified_rows": 1854,
+      "coverage": 0.8765957446808511
+    },
+    {
+      "company_id": "C120",
+      "rows": 2187,
+      "classified_rows": 1764,
+      "coverage": 0.8065843621399177
+    },
+    {
+      "company_id": "C121",
+      "rows": 994,
+      "classified_rows": 820,
+      "coverage": 0.8249496981891348
+    },
+    {
+      "company_id": "C122",
+      "rows": 317,
+      "classified_rows": 105,
+      "coverage": 0.3312302839116719
+    },
+    {
+      "company_id": "C123",
+      "rows": 1593,
+      "classified_rows": 175,
+      "coverage": 0.1098556183301946
+    },
+    {
+      "company_id": "C124",
+      "rows": 501,
+      "classified_rows": 260,
+      "coverage": 0.5189620758483033
+    },
+    {
+      "company_id": "C125",
+      "rows": 1999,
+      "classified_rows": 1658,
+      "coverage": 0.8294147073536768
+    },
+    {
+      "company_id": "C126",
+      "rows": 3231,
+      "classified_rows": 1934,
+      "coverage": 0.598576292169607
+    },
+    {
+      "company_id": "C127",
+      "rows": 1849,
+      "classified_rows": 1730,
+      "coverage": 0.9356408869659275
+    },
+    {
+      "company_id": "C128",
+      "rows": 565,
+      "classified_rows": 327,
+      "coverage": 0.5787610619469027
+    },
+    {
+      "company_id": "C129",
+      "rows": 1984,
+      "classified_rows": 1704,
+      "coverage": 0.8588709677419355
+    },
+    {
+      "company_id": "C130",
+      "rows": 2340,
+      "classified_rows": 1978,
+      "coverage": 0.8452991452991453
+    },
+    {
+      "company_id": "C131",
+      "rows": 527,
+      "classified_rows": 304,
+      "coverage": 0.5768500948766604
+    },
+    {
+      "company_id": "C132",
+      "rows": 2882,
+      "classified_rows": 1691,
+      "coverage": 0.5867453157529493
+    },
+    {
+      "company_id": "C133",
+      "rows": 496,
+      "classified_rows": 296,
+      "coverage": 0.5967741935483871
+    },
+    {
+      "company_id": "C134",
+      "rows": 515,
+      "classified_rows": 178,
+      "coverage": 0.34563106796116505
+    },
+    {
+      "company_id": "C135",
+      "rows": 917,
+      "classified_rows": 845,
+      "coverage": 0.9214830970556162
+    },
+    {
+      "company_id": "C136",
+      "rows": 508,
+      "classified_rows": 397,
+      "coverage": 0.781496062992126
+    },
+    {
+      "company_id": "C137",
+      "rows": 3218,
+      "classified_rows": 1906,
+      "coverage": 0.5922933499067744
+    },
+    {
+      "company_id": "C138",
+      "rows": 421,
+      "classified_rows": 115,
+      "coverage": 0.27315914489311166
+    },
+    {
+      "company_id": "C139",
+      "rows": 470,
+      "classified_rows": 145,
+      "coverage": 0.30851063829787234
+    },
+    {
+      "company_id": "C140",
+      "rows": 2150,
+      "classified_rows": 1720,
+      "coverage": 0.8
+    },
+    {
+      "company_id": "C141",
+      "rows": 2112,
+      "classified_rows": 1550,
+      "coverage": 0.7339015151515151
+    },
+    {
+      "company_id": "C142",
+      "rows": 431,
+      "classified_rows": 252,
+      "coverage": 0.5846867749419954
+    },
+    {
+      "company_id": "C143",
+      "rows": 998,
+      "classified_rows": 780,
+      "coverage": 0.781563126252505
+    },
+    {
+      "company_id": "C144",
+      "rows": 2397,
+      "classified_rows": 2254,
+      "coverage": 0.9403420942845223
+    },
+    {
+      "company_id": "C145",
+      "rows": 484,
+      "classified_rows": 263,
+      "coverage": 0.5433884297520661
+    },
+    {
+      "company_id": "C146",
+      "rows": 1980,
+      "classified_rows": 1765,
+      "coverage": 0.8914141414141414
+    },
+    {
+      "company_id": "C147",
+      "rows": 2353,
+      "classified_rows": 2065,
+      "coverage": 0.877603059923502
+    },
+    {
+      "company_id": "C148",
+      "rows": 1457,
+      "classified_rows": 164,
+      "coverage": 0.11256005490734386
+    },
+    {
+      "company_id": "C149",
+      "rows": 893,
+      "classified_rows": 401,
+      "coverage": 0.4490481522956327
+    },
+    {
+      "company_id": "C150",
+      "rows": 2244,
+      "classified_rows": 1958,
+      "coverage": 0.8725490196078431
+    }
+  ]
+}

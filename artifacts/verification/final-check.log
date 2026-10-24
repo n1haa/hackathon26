@@ -1,0 +1,260 @@
+No broken requirements found.
+All checks passed!
+........................................................................ [ 29%]
+........................................................................ [ 58%]
+............................xx.......................................... [ 87%]
+................................                                         [100%]
+246 passed, 2 xfailed in 15.52s
+* Getting build dependencies for sdist...
+running egg_info
+writing packages/risk\cashflow_workspace.egg-info\PKG-INFO
+writing dependency_links to packages/risk\cashflow_workspace.egg-info\dependency_links.txt
+writing entry points to packages/risk\cashflow_workspace.egg-info\entry_points.txt
+writing requirements to packages/risk\cashflow_workspace.egg-info\requires.txt
+writing top-level names to packages/risk\cashflow_workspace.egg-info\top_level.txt
+reading manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+writing manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+* Building sdist...
+running sdist
+running egg_info
+writing packages/risk\cashflow_workspace.egg-info\PKG-INFO
+writing dependency_links to packages/risk\cashflow_workspace.egg-info\dependency_links.txt
+writing entry points to packages/risk\cashflow_workspace.egg-info\entry_points.txt
+writing requirements to packages/risk\cashflow_workspace.egg-info\requires.txt
+writing top-level names to packages/risk\cashflow_workspace.egg-info\top_level.txt
+reading manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+writing manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+running check
+creating cashflow_workspace-0.1.0
+creating cashflow_workspace-0.1.0\apps\web
+creating cashflow_workspace-0.1.0\apps\web\cashflow
+creating cashflow_workspace-0.1.0\packages\risk\cashflow_workspace.egg-info
+creating cashflow_workspace-0.1.0\packages\analytics\forecasting
+creating cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+creating cashflow_workspace-0.1.0\packages\integration\cashflow_app
+creating cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+creating cashflow_workspace-0.1.0\tests
+copying files to cashflow_workspace-0.1.0...
+copying README.md -> cashflow_workspace-0.1.0
+copying pyproject.toml -> cashflow_workspace-0.1.0
+copying apps\web\__init__.py -> cashflow_workspace-0.1.0\apps\web
+copying apps\web\app.py -> cashflow_workspace-0.1.0\apps\web
+copying apps\web\cashflow\__init__.py -> cashflow_workspace-0.1.0\apps\web\cashflow
+copying apps\web\cashflow\data_access.py -> cashflow_workspace-0.1.0\apps\web\cashflow
+copying apps\web\cashflow\demo_data.py -> cashflow_workspace-0.1.0\apps\web\cashflow
+copying apps\web\cashflow\styles.py -> cashflow_workspace-0.1.0\apps\web\cashflow
+copying apps\web\cashflow\upload.py -> cashflow_workspace-0.1.0\apps\web\cashflow
+copying packages/risk\cashflow_workspace.egg-info\PKG-INFO -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages/risk\cashflow_workspace.egg-info\SOURCES.txt -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages/risk\cashflow_workspace.egg-info\dependency_links.txt -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages/risk\cashflow_workspace.egg-info\entry_points.txt -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages/risk\cashflow_workspace.egg-info\requires.txt -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages/risk\cashflow_workspace.egg-info\top_level.txt -> cashflow_workspace-0.1.0\packages/risk\cashflow_workspace.egg-info
+copying packages\analytics\forecasting\__init__.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\data.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\demo.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\evaluation.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\events.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\features.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\models.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\service.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\forecasting\synthetic.py -> cashflow_workspace-0.1.0\packages\analytics\forecasting
+copying packages\analytics\transaction_classifier\__init__.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\analyze_dataset.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\core.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\dataset.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\evaluation.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\ml.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\analytics\transaction_classifier\rules.py -> cashflow_workspace-0.1.0\packages\analytics\transaction_classifier
+copying packages\integration\cashflow_app\__init__.py -> cashflow_workspace-0.1.0\packages\integration\cashflow_app
+copying packages\integration\cashflow_app\cli.py -> cashflow_workspace-0.1.0\packages\integration\cashflow_app
+copying packages\integration\cashflow_app\service.py -> cashflow_workspace-0.1.0\packages\integration\cashflow_app
+copying packages\risk\recurring_detector.py -> cashflow_workspace-0.1.0\packages\risk
+copying packages\risk\risk_engine.py -> cashflow_workspace-0.1.0\packages\risk
+copying packages\risk\cashflow_integrated\C002.csv -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\__init__.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\audit_data.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\cashflow_pipeline.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\data_loader.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\main.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\recurring_detector.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\risk_engine.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_cashflow_pipeline.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_integration_regressions.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_recurring_detector.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_risk_engine.py -> cashflow_workspace-0.1.0\packages\risk\cashflow_integrated
+copying tests\test_application.py -> cashflow_workspace-0.1.0\tests
+Writing cashflow_workspace-0.1.0\setup.cfg
+Creating tar archive
+removing 'cashflow_workspace-0.1.0' (and everything under it)
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+running egg_info
+writing packages/risk\cashflow_workspace.egg-info\PKG-INFO
+writing dependency_links to packages/risk\cashflow_workspace.egg-info\dependency_links.txt
+writing entry points to packages/risk\cashflow_workspace.egg-info\entry_points.txt
+writing requirements to packages/risk\cashflow_workspace.egg-info\requires.txt
+writing top-level names to packages/risk\cashflow_workspace.egg-info\top_level.txt
+reading manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+writing manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build\lib
+copying packages\risk\risk_engine.py -> build\lib
+copying packages\risk\recurring_detector.py -> build\lib
+creating build\lib\cashflow
+copying apps\web\cashflow\data_access.py -> build\lib\cashflow
+copying apps\web\cashflow\demo_data.py -> build\lib\cashflow
+copying apps\web\cashflow\styles.py -> build\lib\cashflow
+copying apps\web\cashflow\upload.py -> build\lib\cashflow
+copying apps\web\cashflow\__init__.py -> build\lib\cashflow
+creating build\lib\cashflow_web
+copying apps\web\app.py -> build\lib\cashflow_web
+copying apps\web\__init__.py -> build\lib\cashflow_web
+creating build\lib\cashflow_app
+copying packages\integration\cashflow_app\cli.py -> build\lib\cashflow_app
+copying packages\integration\cashflow_app\service.py -> build\lib\cashflow_app
+copying packages\integration\cashflow_app\__init__.py -> build\lib\cashflow_app
+creating build\lib\forecasting
+copying packages\analytics\forecasting\data.py -> build\lib\forecasting
+copying packages\analytics\forecasting\demo.py -> build\lib\forecasting
+copying packages\analytics\forecasting\evaluation.py -> build\lib\forecasting
+copying packages\analytics\forecasting\events.py -> build\lib\forecasting
+copying packages\analytics\forecasting\features.py -> build\lib\forecasting
+copying packages\analytics\forecasting\models.py -> build\lib\forecasting
+copying packages\analytics\forecasting\service.py -> build\lib\forecasting
+copying packages\analytics\forecasting\synthetic.py -> build\lib\forecasting
+copying packages\analytics\forecasting\__init__.py -> build\lib\forecasting
+creating build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\analyze_dataset.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\core.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\dataset.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\evaluation.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\ml.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\rules.py -> build\lib\transaction_classifier
+copying packages\analytics\transaction_classifier\__init__.py -> build\lib\transaction_classifier
+creating build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\audit_data.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\cashflow_pipeline.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\data_loader.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\main.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\recurring_detector.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\risk_engine.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_cashflow_pipeline.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_integration_regressions.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_recurring_detector.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\test_risk_engine.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\__init__.py -> build\lib\cashflow_integrated
+copying packages\risk\cashflow_integrated\C002.csv -> build\lib\cashflow_integrated
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\cashflow
+copying build\lib\cashflow\data_access.py -> build\bdist.win-amd64\wheel\.\cashflow
+copying build\lib\cashflow\demo_data.py -> build\bdist.win-amd64\wheel\.\cashflow
+copying build\lib\cashflow\styles.py -> build\bdist.win-amd64\wheel\.\cashflow
+copying build\lib\cashflow\upload.py -> build\bdist.win-amd64\wheel\.\cashflow
+copying build\lib\cashflow\__init__.py -> build\bdist.win-amd64\wheel\.\cashflow
+creating build\bdist.win-amd64\wheel\cashflow_app
+copying build\lib\cashflow_app\cli.py -> build\bdist.win-amd64\wheel\.\cashflow_app
+copying build\lib\cashflow_app\service.py -> build\bdist.win-amd64\wheel\.\cashflow_app
+copying build\lib\cashflow_app\__init__.py -> build\bdist.win-amd64\wheel\.\cashflow_app
+creating build\bdist.win-amd64\wheel\cashflow_integrated
+copying build\lib\cashflow_integrated\audit_data.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\C002.csv -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\cashflow_pipeline.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\data_loader.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\main.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\recurring_detector.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\risk_engine.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\test_cashflow_pipeline.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\test_integration_regressions.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\test_recurring_detector.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\test_risk_engine.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+copying build\lib\cashflow_integrated\__init__.py -> build\bdist.win-amd64\wheel\.\cashflow_integrated
+creating build\bdist.win-amd64\wheel\cashflow_web
+copying build\lib\cashflow_web\app.py -> build\bdist.win-amd64\wheel\.\cashflow_web
+copying build\lib\cashflow_web\__init__.py -> build\bdist.win-amd64\wheel\.\cashflow_web
+creating build\bdist.win-amd64\wheel\forecasting
+copying build\lib\forecasting\data.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\demo.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\evaluation.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\events.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\features.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\models.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\service.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\synthetic.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\forecasting\__init__.py -> build\bdist.win-amd64\wheel\.\forecasting
+copying build\lib\recurring_detector.py -> build\bdist.win-amd64\wheel\.
+copying build\lib\risk_engine.py -> build\bdist.win-amd64\wheel\.
+creating build\bdist.win-amd64\wheel\transaction_classifier
+copying build\lib\transaction_classifier\analyze_dataset.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\core.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\dataset.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\evaluation.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\ml.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\rules.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+copying build\lib\transaction_classifier\__init__.py -> build\bdist.win-amd64\wheel\.\transaction_classifier
+running install_egg_info
+running egg_info
+writing packages/risk\cashflow_workspace.egg-info\PKG-INFO
+writing dependency_links to packages/risk\cashflow_workspace.egg-info\dependency_links.txt
+writing entry points to packages/risk\cashflow_workspace.egg-info\entry_points.txt
+writing requirements to packages/risk\cashflow_workspace.egg-info\requires.txt
+writing top-level names to packages/risk\cashflow_workspace.egg-info\top_level.txt
+reading manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+writing manifest file 'packages/risk\cashflow_workspace.egg-info\SOURCES.txt'
+Copying packages/risk\cashflow_workspace.egg-info to build\bdist.win-amd64\wheel\.\cashflow_workspace-0.1.0-py3.10.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\cashflow_workspace-0.1.0.dist-info\WHEEL
+creating 'D:\\hackathon\\cashflow-monorepo\\dist\\.tmp-ssq7jii7\\cashflow_workspace-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+adding 'recurring_detector.py'
+adding 'risk_engine.py'
+adding 'cashflow/__init__.py'
+adding 'cashflow/data_access.py'
+adding 'cashflow/demo_data.py'
+adding 'cashflow/styles.py'
+adding 'cashflow/upload.py'
+adding 'cashflow_app/__init__.py'
+adding 'cashflow_app/cli.py'
+adding 'cashflow_app/service.py'
+adding 'cashflow_integrated/C002.csv'
+adding 'cashflow_integrated/__init__.py'
+adding 'cashflow_integrated/audit_data.py'
+adding 'cashflow_integrated/cashflow_pipeline.py'
+adding 'cashflow_integrated/data_loader.py'
+adding 'cashflow_integrated/main.py'
+adding 'cashflow_integrated/recurring_detector.py'
+adding 'cashflow_integrated/risk_engine.py'
+adding 'cashflow_integrated/test_cashflow_pipeline.py'
+adding 'cashflow_integrated/test_integration_regressions.py'
+adding 'cashflow_integrated/test_recurring_detector.py'
+adding 'cashflow_integrated/test_risk_engine.py'
+adding 'cashflow_web/__init__.py'
+adding 'cashflow_web/app.py'
+adding 'forecasting/__init__.py'
+adding 'forecasting/data.py'
+adding 'forecasting/demo.py'
+adding 'forecasting/evaluation.py'
+adding 'forecasting/events.py'
+adding 'forecasting/features.py'
+adding 'forecasting/models.py'
+adding 'forecasting/service.py'
+adding 'forecasting/synthetic.py'
+adding 'transaction_classifier/__init__.py'
+adding 'transaction_classifier/analyze_dataset.py'
+adding 'transaction_classifier/core.py'
+adding 'transaction_classifier/dataset.py'
+adding 'transaction_classifier/evaluation.py'
+adding 'transaction_classifier/ml.py'
+adding 'transaction_classifier/rules.py'
+adding 'cashflow_workspace-0.1.0.dist-info/METADATA'
+adding 'cashflow_workspace-0.1.0.dist-info/WHEEL'
+adding 'cashflow_workspace-0.1.0.dist-info/entry_points.txt'
+adding 'cashflow_workspace-0.1.0.dist-info/top_level.txt'
+adding 'cashflow_workspace-0.1.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Successfully built cashflow_workspace-0.1.0.tar.gz and cashflow_workspace-0.1.0-py3-none-any.whl

@@ -1,0 +1,14 @@
+{
+  "locked_dependencies_verified": 58,
+  "duplicate_distributions": false,
+  "wheel_sha256": "3268f2aaaf7b7d50f99739e75ae9e19d9d5229176fc4986993e952e951b35ffb",
+  "tests": {
+    "passed": 246,
+    "preexisting_xfailed": 2
+  },
+  "http_health": {
+    "status": 200,
+    "body": "ok"
+  },
+  "rebuilt_wheel_files_identical_to_tested_install": 40
+}

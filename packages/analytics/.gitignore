@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+artifacts/classifier_dataset/classified_operations.csv

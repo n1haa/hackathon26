@@ -1,0 +1,11 @@
+usage: cli.py [-h] {run,analyze} ...
+
+Installed CLI and Streamlit launcher, independent of the current directory.
+
+positional arguments:
+  {run,analyze}
+    run          Start the Streamlit application
+    analyze      Analyze a CSV/XLSX statement
+
+options:
+  -h, --help     show this help message and exit

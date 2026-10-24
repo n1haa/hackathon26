@@ -1,0 +1,10 @@
+Processing d:\hackathon\cashflow-monorepo\dist\cashflow_workspace-0.1.0-py3-none-any.whl
+Installing collected packages: cashflow-workspace
+  Attempting uninstall: cashflow-workspace
+    Found existing installation: cashflow-workspace 0.1.0
+    Uninstalling cashflow-workspace-0.1.0:
+      Successfully uninstalled cashflow-workspace-0.1.0
+Successfully installed cashflow-workspace-0.1.0
+
+[notice] A new release of pip is available: 23.0.1 -> 26.2.2
+[notice] To update, run: D:\hackathon\cashflow-monorepo\.venv-release\Scripts\python.exe -m pip install --upgrade pip
