@@ -1,0 +1,1 @@
+"""CashFlow AI interface package."""
